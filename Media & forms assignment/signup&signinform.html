@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <h2>Sign Up</h2>
+
+    <form action="signup_process.php" method="post">
+      <label for="first_name">First Name:</label>
+      <input
+        type="text"
+        id="first_name"
+        name="first_name"
+        minlength="3"
+        required
+      /><br />
+
+      <label for="last_name">Last Name:</label>
+      <input
+        type="text"
+        id="last_name"
+        name="last_name"
+        value="Last name"
+        minlength="3"
+        required
+      /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required /><br />
+
+      <label for="confirm_password">Confirm Password:</label>
+      <input
+        type="password"
+        id="confirm_password"
+        name="confirm_password"
+        required
+      /><br />
+
+      <label for="age">Age:</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        min="0"
+        max="150"
+        required
+      /><br />
+
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" required />
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other" required />
+      <label for="other">Other</label><br />
+
+      <input type="checkbox" id="terms" name="terms" required />
+      <label for="terms"
+        >I agree to the
+        <a href="terms_and_conditions.html" target="_blank"
+          >Terms and Conditions</a
+        ></label
+      ><br />
+
+      <input type="submit" value="Sign Up" />
+    </form>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign In</title>
+  </head>
+  <body>
+    <h2>Sign In</h2>
+
+    <form action="signin_process.php" method="post">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required /><br />
+
+      <input type="submit" value="Sign In" />
+    </form>
+  </body>
+</html>
